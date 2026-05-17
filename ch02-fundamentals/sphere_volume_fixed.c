@@ -1,3 +1,6 @@
+/* KN King - Chapter 2: C Fundamentals
+   Program: Sphere Volume with fixed value
+   Concepts: variables, printf, float arithmetic */
 #include <stdio.h>
 #define PI 3.1415926f
 int main(void)
