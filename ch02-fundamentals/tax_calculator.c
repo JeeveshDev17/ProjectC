@@ -1,3 +1,6 @@
+/* KN King - Chapter 2: C Fundamentals
+   Program: Taxxed amount with User Input
+   Concepts: variables, scanf, printf, float arithmetic */
 #include <stdio.h>
 int main (void){
     float amount, taxxed_amount;
