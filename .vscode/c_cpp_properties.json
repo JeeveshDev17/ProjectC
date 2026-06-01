@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "WinARM",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "C:/msys64/clangarm64/bin/clang.exe",
+            "cStandard": "c17",
+            "intelliSenseMode": "windows-clang-arm64"
+        }
+    ],
+    "version": 4
+}
