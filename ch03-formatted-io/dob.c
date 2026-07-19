@@ -9,17 +9,18 @@ int main(void)
 
   printf("Enter a date (mm/dd/yyyy): ");
   scanf("%d/%d/%d", &month, &day, &year);
-  if (month >= 1 && month <= 12)
+  if (month >= 1 && month <= 12 && day >= 1 && day <= 31 && year >= 1900 && year <= 2100)
   {
     
     printf("You entered the date %d %.2d %.2d\n", year, month, day);
-    return 1;
+    return 0;
   
   }
 
   else 
   {
     printf("You entered an invalid date\n");
+    return 1;
   }
 
   return 0;
