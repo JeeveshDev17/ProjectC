@@ -12,11 +12,8 @@ int main(void)
 
 int numl, denoml, num2, denom2, result_num, result_denom; 
 
-printf("Enter first fraction: "); 
-scanf("%d/%d", &numl, &denoml); 
-
-printf("Enter second fraction: "); 
-scanf("%d/%d", &num2, &denom2); 
+printf("Enter the two fractions seperated by a plus sin: "); 
+scanf("%d/%d+%d/%d", &numl, &denoml, &num2, &denom2); 
 
 result_num = numl * denom2 + num2 * denoml; 
 
