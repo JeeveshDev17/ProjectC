@@ -1,13 +1,19 @@
+/* KN King - Chapter 4: Expressions
+   Program: UPC Check Digit
+   Concepts: variables, scanf, printf format and expressions*/
 #include<stdio.h>
 int main(void){
-    int i, i1, i2, i3, i4, i5, j1, j2, j3, j4, j5, k;
+    int d, i1, i2, i3, i4, i5, j1, j2, j3, j4, j5, odd_sum, even_sum, total, k;
     printf("Enter The First (Single) Digit: ");
-    scanf("%1d", &i);
+    scanf("%1d", &d);
     printf("Enter The First Group of Five Digits: ");
     scanf("%1d%1d%1d%1d%1d", &i1, &i2, &i3, &i4, &i5);
     printf("Enter The Second Group of Five Digits: ");
     scanf("%1d%1d%1d%1d%1d", &j1, &j2, &j3, &j4, &j5);
-    k = 9-(((3*(i+i2+i4+j1+j3+j5) + i1+i3+i5+j2+j4)-1) % 10);
-    printf("Check Digit: %1d", k);
+    odd_sum = d+i2+i4+j1+j3+j5;
+    even_sum = i1+i3+i5+j2+j4;
+    total = 3*odd_sum + even_sum;
+    k = 9-((total-1) % 10);
+    printf("Check Digit: %d\n", k);
     return 0;
 }
