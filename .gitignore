@@ -5,11 +5,9 @@
 *.obj
 a.out
 
-# VS Code
-.vscode/
+# Editor / tooling
 tempCodeRunnerFile.*
 
 # Windows
 Thumbs.db
-desktop.initempCodeRunnerFile.c
-tempCodeRunnerFile.exe
+desktop.ini
