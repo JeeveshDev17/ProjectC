@@ -14,6 +14,6 @@ int main(void){
     even_sum = i1+i3+i5+j2+j4;
     total = 3*odd_sum + even_sum;
     k = 9-((total-1) % 10);
-    printf("Check Digit: %d\n", k);
+    printf("Check Digit is: %d\n", k);
     return 0;
 }
